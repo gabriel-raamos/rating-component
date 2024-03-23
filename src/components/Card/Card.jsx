@@ -7,7 +7,7 @@ export default function Card() {
     const [formSubmitted, setFormSubmitted] = useState(false);
     const [selected, setSelected] = useState(null)
 
-    // Função para atualizar o botão selecionado
+    // Function to update selected button
   const handleButtonSelected = (index) => {
     setSelected(index);
   };
@@ -21,7 +21,6 @@ export default function Card() {
 
             {!formSubmitted ? <Form onSubmit={handleFormSubmit} buttonSelected={selected} setSelected={handleButtonSelected} /> : <SubmittedState selectedButton={selected} /> }
 
-            {/* <p>{selected}</p> */}
         </div>
     )
 }

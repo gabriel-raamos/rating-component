@@ -8,11 +8,11 @@ export default function Form(prop) {
 
         if (prop.buttonSelected !== null && prop.buttonSelected === index) {
             prop.setSelected(null)
-            // Desseleciona o botão se já estiver selecionado
+            // Deselect the selected button
             console.log(prop.buttonSelected)
         } else {
             prop.setSelected(index+1)
-            // Seleciona o botão se não estiver selecionado
+            // Select button if it ain't selected
             console.log(prop.buttonSelected)
         }
     }
@@ -59,7 +59,7 @@ export default function Form(prop) {
 
                 <h1 className="text-xl font-bold my-3" >How did we do?</h1>
 
-                <p>
+                <p className='text-lightGray' >
                     Please let us know how we did with your support request.
                     All feedback is appreciated to help us improve our offering!
                 </p>
