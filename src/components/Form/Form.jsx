@@ -49,7 +49,7 @@ export default function Form(prop) {
     ]
 
     return (
-        <form>
+        <form className='' >
 
             <div className='m-3' >
                 <button className='rounded-full bg-darkGray p-3 mb-3 cursor-default' >
@@ -65,7 +65,7 @@ export default function Form(prop) {
                 </p>
             </div>
 
-            <div className='grid-cols-5 grid' >
+            <div className='flex w-full justify-between my-5' >
 
                 {buttons.map(
                     (button, index) =>
@@ -84,7 +84,7 @@ export default function Form(prop) {
 
             <div className='justify-center flex' >
                 <button
-                    className="bg-orange text-white hover:bg-white hover:text-orange duration-200 p-4 my-3 w-screen rounded-full"
+                    className="bg-orange text-white hover:bg-white hover:text-orange duration-500 p-4 my-3 w-screen rounded-full"
                     type="submit"
                     onClick={handleSubmit}
                 >

@@ -14,11 +14,10 @@ export default function Card() {
 
     const handleFormSubmit = () => {
         setFormSubmitted(!formSubmitted)
-        console.log(formSubmitted)
     }
 
     return (
-        <div className="bg-darkBlue text-white rounded-xl p-5 m-auto max-w-lg">
+        <div className="bg-darkBlue text-white rounded-xl p-5 m-auto max-w-xs md:max-w-lg">
 
             {!formSubmitted ? <Form onSubmit={handleFormSubmit} buttonSelected={selected} setSelected={handleButtonSelected} /> : <SubmittedState selectedButton={selected} /> }
 
